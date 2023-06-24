@@ -221,18 +221,17 @@ h3{
     background-color: white;
 }
 
-.experience{
-}
+
 
 .experience__section__title{
     text-align: center;
 }
 
 .experience__img{
-    max-width: 100%;
-    max-height: 100%;
-    display: flex;
+    width: 100%;
+    height: auto;
     margin: 1rem;
+    display: flex;
     
 
     
@@ -296,7 +295,6 @@ h3{
 }
 
 .formcontato{
-    padding: 0.5rem 2rem 2rem 2rem;
     color: #464646;
     background: #EAF2FD;
     
@@ -324,6 +322,7 @@ h3{
 }
 
 .formcontato__input{
+    margin: 1.5rem;
     border: none;
     border-radius: 5px;
     min-height: 3.5rem;
@@ -339,6 +338,7 @@ h3{
 }
 
 .formcontato__textarea{
+    margin: 1.5rem;
     padding: 1rem;
     border: none;
     border-radius: 5px;
@@ -354,6 +354,7 @@ h3{
 }
 
 .formcontato__botao{
+    margin: 1.5rem;
     color: white;
     background-color: #2A7AE4;
     border: none;
@@ -373,9 +374,6 @@ h3{
     text-align: center;
     display: flex;
     flex-direction: column;
-
-
-    
 }
 
 
@@ -384,9 +382,10 @@ h3{
         display: none;
      }
 
+
 }
 
-/*Mobile*/
+
 @media (min-width: 768px) {
     .title__div{
         display: flex;
@@ -400,14 +399,13 @@ h3{
 
     .academic__courses{
         display: flex;
-        flex-direction: row;
         align-items: center;
     }
 
 }
 
 @media (min-width: 1024px) {
-    .experiencie__box{
+    .experience__box{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -425,8 +423,13 @@ h3{
     }
 
     .experience__img{
-        max-width: 70%;
-        max-height: 70%;
+        width: 100%;
+        height: auto;
+    }
+
+    .academic__courses{
+        display: flex;
+        align-items: center;
     }
 
     .formcontato__img {
@@ -472,4 +475,6 @@ h3{
     .experience__title{
         font-size: 1.5rem;
     }
+
 }
+
