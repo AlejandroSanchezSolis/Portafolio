@@ -1,23 +1,10 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
-:root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
-}
-
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo);
+    background-color: #F5F5F5;
+    color: #464646;
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
-    max-width: 100%;
     
 }
 
@@ -39,54 +26,50 @@ a {
 
 
 .header {
-    padding:2rem;
-    color: #464646;
-    margin-bottom: 0;
-    
+    margin: 2rem;
+}
 
+h3{
+    margin:1rem;
 }
 
 .header__estrellas-nombre {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    font-weight: bolder;
-    padding-left: 2rem;
-
-
+    margin: 1.5rem;
 }
 
 .menu__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    text-align: center;
 
 }
 
 .menu__list__item {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-right: 0.7rem;
     margin-bottom: 0.7rem;
     margin-left: 0.7rem;
     font-weight: 600;
-
 }
 
+.menu__list__item:hover{
+    transform: scale(1.2);
+}
+
+
+
 .title {
-    padding: 2rem;
-    margin-top: -1.5rem;
-    color: #464646;
+    margin: 2rem;
 
 
 }
 
 .title__profile {
-    margin-bottom: 2rem;
     width: 30%;
     height: auto;
-    padding-left: 1.5rem;
+    
 }
 
 .title__bio {
@@ -103,39 +86,40 @@ a {
 
 .title__network {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-top: 2rem;
     font-weight: bold;
-    gap: 2rem;
-    align-items: center;
     text-align: center;
 
 }
 
 .title__network__item{
-    display: flex;
-    flex-wrap: nowrap;
+    margin: 1rem;
 }
+
 
 .about {
     text-align: center;
-    padding: 0.5rem 2rem 2rem 2rem;
-    color: #464646;
     background-color: #EAF2FD;
-    width: 100%;
+
     
 }
 
 .about__title {
     font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.about__paragraph{
+    margin: 1.5rem;
 }
 
 
 .about__firma {
     display: flex;
     justify-items: flex-start;
-    margin-left: 2rem;
-    padding-top: 0.5rem;
+    margin-left: 3rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -149,29 +133,32 @@ a {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .skills__box{
     background: white;
-    display: flex;
+
     padding: 2rem 4rem 4rem 1rem;
-    height: 5rem;
-    justify-content: center;
-    align-items: baseline;
+    height: 3rem;
     margin: 1rem;
 }
 
 
-.skills__img{
-    align-items: flex-start;
+.skills__box__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+
+
+
+
 
 .skills__name{
     font-weight: bold;
-    padding-top: 1rem;
+    margin-top: 1rem;
 }
 
 .hobbies{
-    color: #464646;
     margin-bottom: 3rem;
     
 }
@@ -191,11 +178,14 @@ a {
     background: white;
     padding: 2rem 4rem 4rem 1rem;
     height: 3rem;
-    width: 4rem;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     margin: 1rem;
+}
+
+.hobbies__box__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hobbies__name{
@@ -204,36 +194,34 @@ a {
 }
 
 .academic{
-    padding: 0.5rem 2rem 2rem 2rem;
-    color: #464646;
     background-color: #EAF2FD;
-    width: 100%;
 }
 
 .academic__title{
     font-size: 1.5rem;
     text-align: center;
+    padding-top: 1rem;
 }
 
 .academic__courses{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .academic__courses__box{
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .academic_item_img{
-    padding: 4rem;
+    padding: 1rem;
     background-color: white;
 }
 
 .experience{
-    color: #464646;
-    
 }
 
 .experience__section__title{
@@ -311,7 +299,6 @@ a {
     padding: 0.5rem 2rem 2rem 2rem;
     color: #464646;
     background: #EAF2FD;
-    width: 100%;
     
     
     
@@ -331,11 +318,7 @@ a {
 
 .formcontato__form{
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
     
 
 }
@@ -361,6 +344,7 @@ a {
     border-radius: 5px;
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
     margin-bottom: 1.5rem;
+    resize: none;
 }
 
 .formcontato__textarea:focus{
@@ -377,7 +361,6 @@ a {
     padding: 1rem;
     border-radius: 2px;
     font-size: 1rem;
-    align-items: flex-start;
     width: fit-content;
 }
 
@@ -388,7 +371,9 @@ a {
 .footer{
     background: white;
     text-align: center;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
 
     
 }
@@ -398,6 +383,7 @@ a {
     .formcontato__img{
         display: none;
      }
+
 }
 
 /*Mobile*/
@@ -405,12 +391,11 @@ a {
     .title__div{
         display: flex;
         flex-direction: row-reverse;
-        gap: 3rem;
+        margin: 2rem;
     }
     .title__profile{
         width: 30%;
         height: 30%;
-        margin-right: -2rem;
     }
 
     .academic__courses{
@@ -476,31 +461,15 @@ a {
         font-size: 3rem;
     }
 
-    .about__title{
-        font-size: 2rem;
-    }
-
-    .skills__title{
-        font-size: 2rem;
-    }
-
-    .hobbies__title{
-        font-size: 2rem;
-    }
-
-    .academic__title{
-        font-size: 2rem;
-    }
-
-    .experience__section__title{
-        font-size: 2rem;
-    }
-    
+        .about__title,
+        .skills__title,
+        .hobbies__title,
+        .academic__title,
+        .experience__section__title,
+        .formcontato__title {
+            font-size: 2rem;
+        }
     .experience__title{
         font-size: 1.5rem;
-    }
-
-    .formcontato__title{
-        font-size: 2rem;
     }
 }
