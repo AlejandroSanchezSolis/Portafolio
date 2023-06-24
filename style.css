@@ -227,6 +227,11 @@ h3{
     text-align: center;
 }
 
+.experience__box{
+    display: flex;
+    flex-direction: column;
+}
+
 .experience__img{
     width: 100%;
     height: auto;
@@ -405,6 +410,7 @@ h3{
 @media (min-width: 1024px) {
     .experience__box{
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         margin: 2.5rem;
