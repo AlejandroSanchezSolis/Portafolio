@@ -234,12 +234,6 @@ h3{
     display: flex;
 }
 
-.experience__box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2.5rem;
-}
 
 .experience__title{
     text-align:center;
