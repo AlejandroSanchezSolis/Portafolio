@@ -5,7 +5,7 @@ body {
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
-    
+
 }
 
 ol,
@@ -19,8 +19,8 @@ a {
     color: #464646;
 }
 
-::placeholder{
-    color: #b9b9b9 ;
+::placeholder {
+    color: #b9b9b9;
     font-family: 'Raleway';
 }
 
@@ -29,8 +29,8 @@ a {
     margin: 2rem;
 }
 
-h3{
-    margin:1rem;
+h3 {
+    margin: 1rem;
 }
 
 .header__estrellas-nombre {
@@ -54,7 +54,7 @@ h3{
     font-weight: 600;
 }
 
-.menu__list__item:hover{
+.menu__list__item:hover {
     transform: scale(1.2);
 }
 
@@ -69,7 +69,7 @@ h3{
 .title__profile {
     width: 30%;
     height: auto;
-    
+
 }
 
 .title__bio {
@@ -93,7 +93,7 @@ h3{
 
 }
 
-.title__network__item{
+.title__network__item {
     margin: 1rem;
 }
 
@@ -102,7 +102,7 @@ h3{
     text-align: center;
     background-color: #EAF2FD;
 
-    
+
 }
 
 .about__title {
@@ -110,7 +110,7 @@ h3{
     padding-top: 1rem;
 }
 
-.about__paragraph{
+.about__paragraph {
     margin: 1.5rem;
 }
 
@@ -128,12 +128,13 @@ h3{
     text-align: center;
 }
 
-.skills__line{
+.skills__line {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.skills__box{
+
+.skills__box {
     background: white;
 
     padding: 2rem 4rem 4rem 1rem;
@@ -142,7 +143,7 @@ h3{
 }
 
 
-.skills__box__list{
+.skills__box__list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,28 +154,28 @@ h3{
 
 
 
-.skills__name{
+.skills__name {
     font-weight: bold;
     margin-top: 1rem;
 }
 
-.hobbies{
+.hobbies {
     margin-bottom: 3rem;
-    
+
 }
 
-.hobbies__title{
+.hobbies__title {
     font-size: 1.5rem;
     text-align: center;
 }
 
-.hobbies__line{
+.hobbies__line {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.hobbies__box{
+.hobbies__box {
     background: white;
     padding: 2rem 4rem 4rem 1rem;
     height: 3rem;
@@ -182,78 +183,77 @@ h3{
     margin: 1rem;
 }
 
-.hobbies__box__list{
+.hobbies__box__list {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hobbies__name{
+.hobbies__name {
     font-weight: bold;
     padding-top: 1rem;
 }
 
-.academic{
+.academic {
     background-color: #EAF2FD;
 }
 
-.academic__title{
+.academic__title {
     font-size: 1.5rem;
     text-align: center;
     padding-top: 1rem;
 }
 
-.academic__courses{
+.academic__courses {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.academic__courses__box{
+.academic__courses__box {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.academic_item_img{
+.academic_item_img {
     padding: 1rem;
     background-color: white;
 }
 
 
 
-.experience__section__title{
+.experience__section__title {
     text-align: center;
 }
 
-.experience__box{
+.experience__box {
     display: flex;
     flex-direction: column;
 }
 
-.experience__img{
+.experience__img {
     width: 100%;
     height: auto;
-    margin: 1rem;
+    margin: 0 auto;
     display: flex;
 }
 
 
-.experience__title{
-    text-align:center;
+.experience__title {
+    text-align: center;
     font-weight: bold;
     margin: 1rem
-    
 }
 
-.experience__text{
+.experience__text {
     text-align: center;
     font-weight: normal;
 
 }
 
-.experience__description{
+.experience__description {
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
@@ -262,69 +262,69 @@ h3{
     margin-bottom: 1rem;
 }
 
-.experiencia__botao--repo{
+.experiencia__botao--repo {
     margin-right: 1rem;
 }
 
-.experiencia__botao--repo{
-    color:#2A7AE4;
+.experiencia__botao--repo {
+    color: #2A7AE4;
     border-color: #2A7AE4;
     padding: 0.5rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.experiencia__botao--repo:hover{
+.experiencia__botao--repo:hover {
     scale: 1.1;
-    background-color: #2A7AE4 ;
+    background-color: #2A7AE4;
     color: white;
 }
 
-.experience__botao--demo{
-    color:white;
+.experience__botao--demo {
+    color: white;
     border: none;
     padding: 0.5rem;
     border-radius: 5px;
     cursor: pointer;
     background: #2A7AE4;
-    
+
 }
 
-.experience__botao--demo:hover{
+.experience__botao--demo:hover {
     scale: 1.1;
-    background-color: white ;
+    background-color: white;
     color: #2A7AE4;
     border-color: #2A7AE4;
 }
 
-.formcontato{
+.formcontato {
     color: #464646;
     background: #EAF2FD;
-    
-    
-    
 
-    
+
+
+
+
 }
 
-.formcontato__title{
+.formcontato__title {
     text-align: center;
 }
 
-.formcontato__subtext{
+.formcontato__subtext {
     font-weight: normal;
     text-align: center;
-    
+
 }
 
-.formcontato__form{
+.formcontato__form {
     display: flex;
     flex-direction: column;
-    
+
 
 }
 
-.formcontato__input{
+.formcontato__input {
     margin: 1.5rem;
     border: none;
     border-radius: 5px;
@@ -332,15 +332,15 @@ h3{
     padding-left: 1rem;
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
     margin-bottom: 2rem;
-    
+
 }
 
-.formcontato__input:focus{
+.formcontato__input:focus {
     border-bottom: #2A7AE4 solid;
     outline: none;
 }
 
-.formcontato__textarea{
+.formcontato__textarea {
     margin: 1.5rem;
     padding: 1rem;
     border: none;
@@ -350,13 +350,13 @@ h3{
     resize: none;
 }
 
-.formcontato__textarea:focus{
+.formcontato__textarea:focus {
     border-bottom: #2A7AE4 solid;
     outline: none;
     resize: none;
 }
 
-.formcontato__botao{
+.formcontato__botao {
     margin: 1.5rem;
     color: white;
     background-color: #2A7AE4;
@@ -368,11 +368,11 @@ h3{
     width: fit-content;
 }
 
-.formcontato__botao:hover{
+.formcontato__botao:hover {
     cursor: pointer;
 }
 
-.footer{
+.footer {
     background: white;
     text-align: center;
     display: flex;
@@ -381,26 +381,27 @@ h3{
 
 
 @media (min-width: 0px) {
-    .formcontato__img{
+    .formcontato__img {
         display: none;
-     }
+    }
 
 
 }
 
 
 @media (min-width: 768px) {
-    .title__div{
+    .title__div {
         display: flex;
         flex-direction: row-reverse;
         margin: 2rem;
     }
-    .title__profile{
+
+    .title__profile {
         width: 30%;
         height: 30%;
     }
 
-    .academic__courses{
+    .academic__courses {
         display: flex;
         align-items: center;
     }
@@ -408,7 +409,7 @@ h3{
 }
 
 @media (min-width: 1024px) {
-    .experience__box{
+    .experience__box {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -416,22 +417,22 @@ h3{
         margin: 2.5rem;
     }
 
-    .experience > :nth-child(3){
+    .experience> :nth-child(3) {
         display: flex;
         flex-direction: row-reverse;
     }
 
-    .experience > :nth-child(5){
+    .experience> :nth-child(5) {
         display: flex;
         flex-direction: row-reverse;
     }
 
-    .experience__img{
+    .experience__img {
         width: 100%;
         height: auto;
     }
 
-    .academic__courses{
+    .academic__courses {
         display: flex;
         align-items: center;
     }
@@ -440,45 +441,46 @@ h3{
         display: flex;
     }
 
-    .formcontato__form{
+    .formcontato__form {
         max-width: 50rem;
     }
 
-    .formcontato__contacto{
+    .formcontato__contacto {
         display: flex;
-        
+
     }
-    .formcontato__img{
+
+    .formcontato__img {
         margin: 1rem;
         padding: 1rem;
     }
-    
-    .formcontato__botao{
+
+    .formcontato__botao {
         margin-top: 0.2rem;
     }
 
-    .menu__list{
+    .menu__list {
         margin-top: -3.5rem;
         display: flex;
         justify-content: flex-end;
 
     }
 
-    .title__bio{
+    .title__bio {
         font-size: 3rem;
     }
 
-        .about__title,
-        .skills__title,
-        .hobbies__title,
-        .academic__title,
-        .experience__section__title,
-        .formcontato__title {
-            font-size: 2rem;
-        }
-    .experience__title{
+    .about__title,
+    .skills__title,
+    .hobbies__title,
+    .academic__title,
+    .experience__section__title,
+    .formcontato__title {
+        font-size: 2rem;
+    }
+
+    .experience__title {
         font-size: 1.5rem;
     }
 
 }
-
