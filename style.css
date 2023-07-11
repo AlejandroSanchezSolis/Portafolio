@@ -31,6 +31,16 @@ a {
 
 h3 {
     margin: 1rem;
+
+}
+
+.nombre:hover {
+    animation: tambalear 0.1s;
+
+}
+
+.stars:hover {
+    animation: tambalear 0.1s;
 }
 
 .header__estrellas-nombre {
@@ -43,8 +53,9 @@ h3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
+
+
 
 .menu__list__item {
     font-size: 1.2rem;
@@ -55,28 +66,60 @@ h3 {
 }
 
 .menu__list__item:hover {
-    transform: scale(1.2);
+    animation: myanimation 2s infinite ease;
 }
 
+@keyframes myanimation {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
 
+    50% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+}
 
 .title {
     margin: 2rem;
+}
 
-
+.title__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title__profile {
-    width: 30%;
+    width: 40%;
     height: auto;
+    text-align: center;
+}
 
+.title__profile:hover {
+    animation: tambalear 0.1s;
 }
 
 .title__bio {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 2rem;
-
 }
 
 .title__subsection {
@@ -90,19 +133,19 @@ h3 {
     justify-content: center;
     font-weight: bold;
     text-align: center;
-
 }
 
 .title__network__item {
     margin: 1rem;
 }
 
+.title__network__item:hover {
+    animation: myanimation 2s infinite ease;
+}
 
 .about {
     text-align: center;
     background-color: #EAF2FD;
-
-
 }
 
 .about__title {
@@ -122,6 +165,34 @@ h3 {
     padding-bottom: 1rem;
 }
 
+.about__firma:hover {
+    animation: tambalear 0.1s;
+}
+
+@keyframes tambalear {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateZ(10deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+
+    }
+
+    75% {
+        transform: rotateZ(-10deg);
+
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+
+    }
+}
 
 .skills__title {
     font-size: 1.5rem;
@@ -136,10 +207,16 @@ h3 {
 
 .skills__box {
     background: white;
-
     padding: 2rem 4rem 4rem 1rem;
     height: 3rem;
     margin: 1rem;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.skills__box:hover {
+    animation: tambalear 0.1s ease;
 }
 
 
@@ -149,10 +226,6 @@ h3 {
     align-items: center;
 
 }
-
-
-
-
 
 .skills__name {
     font-weight: bold;
@@ -181,6 +254,14 @@ h3 {
     height: 3rem;
     text-align: center;
     margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.hobbies__box:hover {
+    animation: tambalear 0.1s ease;
 }
 
 .hobbies__box__list {
@@ -217,12 +298,18 @@ h3 {
     justify-content: center;
 }
 
+.academic__courses__box:hover {
+    animation: tambalear 0.1s ease;
+}
+
 .academic_item_img {
     padding: 1rem;
     background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
-
 
 .experience__section__title {
     text-align: center;
@@ -238,8 +325,8 @@ h3 {
     height: auto;
     margin: 0 auto;
     display: flex;
+    border-radius: 3px;
 }
-
 
 .experience__title {
     text-align: center;
@@ -250,7 +337,6 @@ h3 {
 .experience__text {
     text-align: center;
     font-weight: normal;
-
 }
 
 .experience__description {
@@ -287,7 +373,6 @@ h3 {
     border-radius: 5px;
     cursor: pointer;
     background: #2A7AE4;
-
 }
 
 .experience__botao--demo:hover {
@@ -300,11 +385,6 @@ h3 {
 .formcontato {
     color: #464646;
     background: #EAF2FD;
-
-
-
-
-
 }
 
 .formcontato__title {
@@ -314,14 +394,11 @@ h3 {
 .formcontato__subtext {
     font-weight: normal;
     text-align: center;
-
 }
 
 .formcontato__form {
     display: flex;
     flex-direction: column;
-
-
 }
 
 .formcontato__input {
@@ -332,7 +409,6 @@ h3 {
     padding-left: 1rem;
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
     margin-bottom: 2rem;
-
 }
 
 .formcontato__input:focus {
@@ -370,6 +446,7 @@ h3 {
 
 .formcontato__botao:hover {
     cursor: pointer;
+    animation: tambalear 0.1s ease;
 }
 
 .footer {
@@ -379,15 +456,11 @@ h3 {
     flex-direction: column;
 }
 
-
 @media (min-width: 0px) {
     .formcontato__img {
         display: none;
     }
-
-
 }
-
 
 @media (min-width: 768px) {
     .title__div {
@@ -417,16 +490,6 @@ h3 {
         margin: 2.5rem;
     }
 
-    .experience> :nth-child(3) {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .experience> :nth-child(5) {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
     .experience__img {
         width: 50%;
         height: auto;
@@ -452,8 +515,8 @@ h3 {
     }
 
     .formcontato__img {
-        margin: 1rem;
-        padding: 1rem;
+        margin: 8rem 3rem 3rem 3rem;
+        border-radius: 10px;
     }
 
     .formcontato__botao {
@@ -465,7 +528,6 @@ h3 {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-
     }
 
     .title__bio {
@@ -484,6 +546,4 @@ h3 {
     .experience__title {
         font-size: 1.5rem;
     }
-
-
 }
