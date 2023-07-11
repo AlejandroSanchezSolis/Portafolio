@@ -66,7 +66,7 @@ h3 {
 }
 
 .menu__list__item:hover {
-    animation: myanimation 2s infinite ease;
+    animation: myanimation 1s infinite ease;
 }
 
 @keyframes myanimation {
@@ -140,7 +140,7 @@ h3 {
 }
 
 .title__network__item:hover {
-    animation: myanimation 2s infinite ease;
+    animation: myanimation 1s infinite ease;
 }
 
 .about {
@@ -210,9 +210,9 @@ h3 {
     padding: 2rem 4rem 4rem 1rem;
     height: 3rem;
     margin: 1rem;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .skills__box:hover {
@@ -255,9 +255,9 @@ h3 {
     text-align: center;
     margin: 1rem;
     border-radius: 3px;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .hobbies__box:hover {
@@ -306,9 +306,9 @@ h3 {
     padding: 1rem;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .experience__section__title {
@@ -354,16 +354,22 @@ h3 {
 
 .experiencia__botao--repo {
     color: #2A7AE4;
-    border-color: #2A7AE4;
+    border-color: aliceblue;
+    background-color: white;
     padding: 0.5rem;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+
 }
 
 .experiencia__botao--repo:hover {
     scale: 1.1;
     background-color: #2A7AE4;
     color: white;
+
 }
 
 .experience__botao--demo {
@@ -373,13 +379,18 @@ h3 {
     border-radius: 5px;
     cursor: pointer;
     background: #2A7AE4;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+
 }
 
 .experience__botao--demo:hover {
-    scale: 1.1;
-    background-color: white;
     color: #2A7AE4;
-    border-color: #2A7AE4;
+    background-color: white;
+    border-color: aliceblue;
+    scale: 1.1;
+
 }
 
 .formcontato {
@@ -517,7 +528,12 @@ h3 {
     .formcontato__img {
         margin: 8rem 3rem 3rem 3rem;
         border-radius: 10px;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
     }
+
+
 
     .formcontato__botao {
         margin-top: 0.2rem;
