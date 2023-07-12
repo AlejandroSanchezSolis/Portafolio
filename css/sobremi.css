@@ -1,0 +1,50 @@
+.about {
+    text-align: center;
+    background-color: #EAF2FD;
+}
+
+.about__title {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.about__paragraph {
+    margin: 1.5rem;
+}
+
+
+.about__firma {
+    display: flex;
+    justify-items: flex-start;
+    margin-left: 3rem;
+    padding-bottom: 1rem;
+}
+
+.about__firma:hover {
+    animation: tambalear 0.1s;
+}
+
+@keyframes tambalear {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateZ(10deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+
+    }
+
+    75% {
+        transform: rotateZ(-10deg);
+
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+
+    }
+}

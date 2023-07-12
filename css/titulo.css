@@ -1,0 +1,47 @@
+.title {
+    margin: 2rem;
+}
+
+.title__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__profile {
+    width: 17rem;
+    height: auto;
+    text-align: center;
+}
+
+.title__profile:hover {
+    animation: tambalear 0.1s;
+}
+
+.title__bio {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.title__subsection {
+    font-weight: normal;
+    text-align: center;
+}
+
+.title__network {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title__network__item {
+    margin: 1rem;
+}
+
+.title__network__item:hover {
+    animation: myanimation 1s infinite ease;
+}

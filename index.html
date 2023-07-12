@@ -6,17 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bases.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/titulo.css">
+    <link rel="stylesheet" href="css/sobremi.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/hobbies.css">
+    <link rel="stylesheet" href="css/academic.css">
+    <link rel="stylesheet" href="css/experiencie.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 
     <title> Mi Portafolio</title>
 </head>
 
 <body>
-    <!-- Sección del Menú  -->
     <header class="header">
         <div class="header__estrellas-nombre">
             <img class="stars" src="assets\vector.png">
@@ -30,12 +39,11 @@
                 <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                 <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
                 <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+                <li class="menu__list__item"><a href="mailto:alessolis26@gmail.com">alessolis26@gmail.com</a></li>
             </ul>
-
         </nav>
     </header>
 
-    <!-- Sección del Header/Title/Hero -->
     <section class="title">
         <div class="title__div">
             <img class="title__profile" src="assets\profile.png">
@@ -44,7 +52,6 @@
                 <h3 class="title__subsection">Soy egresado de la Universidad Mayor de San Simon y actualmente estoy
                     participando del proyecto Oracle ONE en Alura Latam.</h3>
                 <ul class="title__network">
-                    <!-- Pon los enlaces de tus redes sociales favoritas -->
                     <li class="title__network__item"><a href="https://github.com/AlejandroSanchezSolis">Github <img
                                 src="assets\arrow.png"> </a></li>
                     <li class="title__network__item"><a
@@ -60,7 +67,6 @@
         </div>
     </section>
 
-    <!-- Sección sobre mi -->
     <section class="about" id="sobre-mi">
         <div class="about__container">
             <h3 class="about__title">Sobre mi</h3>
@@ -71,12 +77,10 @@
                 velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
                 Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas
                 metus vitae, aliquet metus.</p>
-            <!-- Si quieres, pon tú firma acá! -->
             <img class="about__firma" src="assets\signature.png">
         </div>
     </section>
 
-    <!-- Sección de Skills -->
     <section class="skills" id="skills">
         <h3 class="skills__title">Skills</h3>
         <div class="skills__line">
@@ -103,7 +107,6 @@
         </div>
     </section>
 
-    <!-- Sección de Hobbies -->
     <section class="hobbies" id="hobbies">
         <h3 class="hobbies__title">Hobbies</h3>
         <div class="hobbies__line">
@@ -138,13 +141,11 @@
         </div>
     </section>
 
-    <!-- Sección de Formación académica -->
     <section class="academic" id="formacion">
         <h2 class="academic__title">Formación académica</h2>
         <div class="academic__courses">
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
                     <li class="academic__courses__item__img"><img class="academic_item_img"
                             src="assets/Universidad_Mayor_de_San_Simón_Cochabamba_Bolivia.png">
                     </li>
@@ -158,7 +159,6 @@
             </div>
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
-                    <!--Pon el logotipo de la institución de formación -->
                     <li class="academic__courses__item__img"><img class="academic_item_img" src="assets\alura_logo.png">
                     </li>
                     <li class="academic__courses__item__title">
@@ -170,19 +170,15 @@
                 </ul>
             </div>
     </section>
-
-    <!-- Sección de Experiencia Profesional/Proyectos-->
     <section class="experience" id="xp">
         <h2 class="experience__section__title">Proyectos</h2>
 
         <div class="experience__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="assets/encriptador-challenge.png">
             <div class="experience__info">
                 <h2 class="experience__title">Encriptador de texto</h2>
                 <h3 class="experience__text">Challenge Alura Codificador </h3>
                 <div class="experience__description">
-                    <!-- Pon el enlace del proyecto en Github o GithubPages -->
                     <span class="experience__repo"><a
                             href="https://github.com/AlejandroSanchezSolis/encriptador-de-texto"><button
                                 class="experiencia__botao--repo">Repositório</button></a></span>
@@ -193,9 +189,8 @@
                 </div>
             </div>
         </div>
-
     </section>
-    <!-- Sección de Contacto -->
+
     <section class="formcontato" id="contacto">
         <div class="formcontato__contacto">
             <div class="formcontato--esquerda">
@@ -209,35 +204,29 @@
                 <form class="formcontato__form" name="form" action="https://formsubmit.co/alessolis26@gmail.com"
                     method="POST">
                     <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre completo" required
-                        data-tipo="nombre" id="nombre" pattern="^[a-zA-Z\s]{1,50}$">
-                    <span id="error-nombre"></span>
+                        pattern="^[a-zA-Z\s]{1,50}$" data-tipo="nombre" id="nombre">
                     <input class="formcontato__input" type="text" name="número" placeholder="Teléfono de contacto"
-                        required data-tipo="telefono">
+                        id="telefono" data-tipo="telefono" required pattern="^\d{7,10}$">
                     <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required
-                        data-tipo="email" id="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$">
-                    <span id="error-email"></span>
+                        data-tipo="email" id="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$">
                     <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto" required
-                        data-tipo="asunto" id="asunto" maxlength="50">
-                    <span id="error-asunto"></span>
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
-                        placeholder="Mensaje" required data-tipo="asunto" id="asunto" maxlength="300"></textarea>
-                    <span id="error-mensaje"></span>
+                        data-tipo="asunto" id="asunto" pattern="^.{0,50}$">
+                    <textarea class="formcontato__textarea" rows="5" cols="40" name="mensaje" placeholder="Mensaje"
+                        data-tipo="asunto" id="textarea" required maxlength="300"></textarea>
+                    <span id="contador">0/300</span>
                     <button type="submit" class="formcontato__botao" id="boton-enviar">Enviar mensaje</button>
                 </form>
             </div>
         </div>
     </section>
-
-    <!-- Sección de Footer -->
     <section class="footer">
         <div class="footer__rodape">
             <p>Desarrollado por Alejandro Sanchez</p>
             <p>2023</p>
         </div>
     </section>
-
-    <!-- Script del documento JavaScript -->
     <script src="js/validacion.js"></script>
+    <script src=“js/contador.js”></script>
 </body>
 
 </html>

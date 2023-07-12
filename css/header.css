@@ -1,0 +1,24 @@
+.header {
+    margin: 2rem;
+}
+
+.nombre {
+    font-size: 2.5rem;
+
+}
+
+h3 {
+    margin: 1rem;
+}
+
+.nombre:hover,
+.stars:hover {
+    animation: tambalear 0.1s;
+
+}
+
+.header__estrellas-nombre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,25 @@
+body {
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    color: #464646;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #464646;
+}
+
+::placeholder {
+    color: #b9b9b9;
+    font-family: 'Raleway';
+}
