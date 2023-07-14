@@ -43,6 +43,7 @@ textarea.addEventListener("input", () => {
     }
 });
 
+
 let areadetexto = document.getElementById("textarea");
 let contador = document.getElementById("contador");
 function actualizarContador() {
